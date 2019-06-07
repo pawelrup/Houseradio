@@ -1,0 +1,8 @@
+Pods/
+Config/
+.DS_Store
+*./DS_Store
+Podfile.lock
+Houseradio.xcodeproj/project.xcworkspace/
+Houseradio.xcworkspace/
+Houseradio.xcodeproj/xcuserdata/

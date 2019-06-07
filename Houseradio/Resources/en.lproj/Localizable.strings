@@ -1,0 +1,42 @@
+/* 
+  Localizable.strings
+  Houseradio
+
+  Created by Pawel Rup on 16/10/2018.
+  Copyright © 2018 Pawel Rup. All rights reserved.
+*/
+
+// MARK: Country code
+LANGUAGE_CODE = "en";
+
+// MARK: Connection alert
+"Connection failed." = "Connection failed.";
+"The Internet connection appears to be offline." = "The Internet connection appears to be offline.";
+"Invalid URL." = "Invalid URL.";
+"Server not responding." = "Server not responding.";
+
+// MARK: Metadata loader
+"Loading metadata. Please wait." = "Loading metadata. Please wait.";
+
+// MARK: Share message
+"I'm listening to %@ on #houseradio right now.\nCheck it out!\nhttp://www.houseradio.pl" = "I'm listening to %@ on #houseradio right now.\nCheck it out!\nhttp://www.houseradio.pl";
+
+// MARK: Copyright
+"Copyright © 2015 Pawel Rup. All rights reserved." = "Copyright © 2015 Pawel Rup. All rights reserved.";
+
+// MARK: AppleWatch connectivity
+"Your Apple Watch is not reachable." = "Your Apple Watch is not reachable.";
+"Your iOS device is not reachable." = "Your iOS device is not reachable.";
+"Could not connect with Apple Watch." = "Could not connect with Apple Watch.";
+"Could not connect with iOS device." = "Could not connect with iOS device.";
+
+"Play" = "Play";
+"Pause" = "Pause";
+"Stop" = "Stop";
+
+// MARK: Accessibility
+"Tap twice to open houseradio fanpage." = "Tap twice to open houseradio fanpage.";
+"Share" = "Share";
+"Tap twice to share" = "Tap twice to share.";
+"Tap twice to play" = "Tap twice to play.";
+"Tap twice to stop" = "Tap twice to stop.";

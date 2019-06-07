@@ -1,0 +1,42 @@
+/* 
+  Localizable.strings
+  Houseradio
+
+  Created by Pawel Rup on 16/10/2018.
+  Copyright © 2018 Pawel Rup. All rights reserved.
+*/
+
+// MARK: Country code
+LANGUAGE_CODE = "uk";
+
+// MARK: Connection alert
+"Connection failed." = "Підключення не вдалося.";
+"The Internet connection appears to be offline." = "Інтернету, здається, немає.";
+"Invalid URL." = "Неправильний адресу.";
+"Server not responding." = "Сервер не відповідає.";
+
+// MARK: Metadata loader
+"Loading metadata. Please wait." = "Завантаження метаданих. Будь ласка зачекайте.";
+
+// MARK: Share message
+"I'm listening to %@ on #houseradio right now.\nCheck it out!\nhttp://www.houseradio.pl" = "Я слухаю %@ на #houseradio прямо зараз.\nПеревір це!\nhttp://www.houseradio.pl";
+
+// MARK: Copyright
+"Copyright © 2015 Pawel Rup. All rights reserved." = "Aвторське право © 2015 Pawel Rup. Всі права захищені.";
+
+// MARK: AppleWatch connectivity
+"Your Apple Watch is not reachable." = "Ваш Apple Watch не доступний";
+"Your iOS device is not reachable." = "Пристрій iOS не доступний";
+"Could not connect with Apple Watch." = "Неможливо з'єднатися з Apple Watch";
+"Could not connect with iOS device." = "Неможливо з'єднатися з пристроєм iOS";
+
+"Play" = "Грати";
+"Pause" = "Пауза";
+"Stop" = "СТОП";
+
+// MARK: Accessibility
+"Tap twice to open houseradio fanpage." = "Двічі торкніться, щоб відкрити домашню сторінку houseradio.";
+"Share" = "Поділитися";
+"Tap twice to share" = "Торкніться двічі, щоб поділитися.";
+"Tap twice to play" = "Торкніться двічі, щоб грати.";
+"Tap twice to stop" = "Торкніться двічі, щоб зупинити.";

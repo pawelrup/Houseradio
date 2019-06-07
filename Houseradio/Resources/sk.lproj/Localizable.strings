@@ -1,0 +1,42 @@
+/* 
+  Localizable.strings
+  Houseradio
+
+  Created by Pawel Rup on 16/10/2018.
+  Copyright © 2018 Pawel Rup. All rights reserved.
+*/
+
+// MARK: Country code
+LANGUAGE_CODE = "sk";
+
+// MARK: Connection alert
+"Connection failed." = "Chyba pripojenia.";
+"The Internet connection appears to be offline." = "Bez pripojenia na Internet.";
+"Invalid URL." = "Neplatná adresa URL.";
+"Server not responding." = "Server neodpovedá.";
+
+// MARK: Metadata loader
+"Loading metadata. Please wait." = "Načítanie metadáta. Prosím počkajte.";
+
+// MARK: Share message
+"I'm listening to %@ on #houseradio right now.\nCheck it out!\nhttp://www.houseradio.pl" = "Počúvam teraz %@ na #houseradio\nPočúvajte taky!\nhttp://www.houseradio.pl";
+
+// MARK: Copyright
+"Copyright © 2015 Pawel Rup. All rights reserved." = "Copyright © 2015 Pawel Rup. Všetky práva vyhradené.";
+
+// MARK: AppleWatch connectivity
+"Your Apple Watch is not reachable." = "Apple Watch nie je dosiahnuteľný";
+"Your iOS device is not reachable." = "Vaše zariadenie iOS nie je dosiahnuteľný";
+"Could not connect with Apple Watch." = "Nemôžem sa pripojiť s Apple Watch";
+"Could not connect with iOS device." = "Nedá sa pripojiť k zariadenia iOS.";
+
+"Play" = "Hrať";
+"Pause" = "Pauza";
+"Stop" = "Prestať";
+
+// MARK: Accessibility
+"Tap twice to open houseradio fanpage." = "Klepnutím dvakrát otvoríte stránku fanúšikov domény.";
+"Share" = "zdieľam";
+"Tap twice to share" = "Poklepaním dvakrát zdieľate.";
+"Tap twice to play" = "Poklepaním dvakrát prehrajte.";
+"Tap twice to stop" = "Poklepaním dvakrát zastavte.";

@@ -1,0 +1,42 @@
+/* 
+  Localizable.strings
+  Houseradio
+
+  Created by Pawel Rup on 16/10/2018.
+  Copyright © 2018 Pawel Rup. All rights reserved.
+*/
+
+// MARK: Country code
+LANGUAGE_CODE = "de";
+
+// MARK: Connection alert
+"Connection failed." = "Verbindung fehlgeschlagen.";
+"The Internet connection appears to be offline." = "Die Internet-Verbindung scheint offline zu sein.";
+"Invalid URL." = "Ungültige URL.";
+"Server not responding." = "Server reagiert nicht.";
+
+// MARK: Metadata loader
+"Loading metadata. Please wait." = "Metadaten geladen. Warten Sie mal.";
+
+// MARK: Share message
+"I'm listening to %@ on #houseradio right now.\nCheck it out!\nhttp://www.houseradio.pl" = "Ich höre jetzt %@ auf #houseradio\nHör zu!\nhttp://www.houseradio.pl";
+
+// MARK: Copyright
+"Copyright © 2015 Pawel Rup. All rights reserved." = "Copyright © 2014 Paweł Rup. Alle Rechte vorbehalten.";
+
+// MARK: AppleWatch connectivity
+"Your Apple Watch is not reachable." = "Ihr Apple Watch ist nicht erreichbar";
+"Your iOS device is not reachable." = "Ihr iOS-Gerät ist nicht erreichbar";
+"Could not connect with Apple Watch." = "Konnte nicht mit Apple Watch Verbindung";
+"Could not connect with iOS device." = "Konnte nicht mit dem iOS-Gerät verbinden";
+
+"Play" = "Spiel";
+"Pause" = "Pause";
+"Stop" = "Halt";
+
+// MARK: Accessibility
+"Tap twice to open houseradio fanpage." = "Tippen Sie zweimal auf, um die Fanpage von houseradio zu öffnen.";
+"Share" = "Aktie";
+"Tap twice to share" = "Tippen Sie zweimal zu teilen.";
+"Tap twice to play" = "Tippen Sie zweimal, um zu spiel.";
+"Tap twice to stop" = "Tippen Sie zweimal, um zu stoppen.";
