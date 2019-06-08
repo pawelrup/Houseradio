@@ -10,6 +10,9 @@
 		89B5B2FEAA4FED72F7CA3F63 /* Pods_Houseradio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B9E57A360A005AD1E675B4 /* Pods_Houseradio.framework */; };
 		BA243E14222BCB8B00FDB1C1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA243E13222BCB8B00FDB1C1 /* ViewModel.swift */; };
 		BA243E16222BCBA700FDB1C1 /* ViewModelBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA243E15222BCBA700FDB1C1 /* ViewModelBased.swift */; };
+		BA2BC67622AC013800197944 /* RemoteCommandCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2BC67522AC013800197944 /* RemoteCommandCenter.swift */; };
+		BA2BC67822AC020100197944 /* NowPlayingInfoCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2BC67722AC020100197944 /* NowPlayingInfoCenter.swift */; };
+		BA2BC67A22AC07E500197944 /* InfoCenterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2BC67922AC07E500197944 /* InfoCenterData.swift */; };
 		BA3B013E22AAE5F500252803 /* MetadataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B013D22AAE5F500252803 /* MetadataLoader.swift */; };
 		BA3B014022AAE73300252803 /* CoverLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B013F22AAE73300252803 /* CoverLoader.swift */; };
 		BA435A5A2261CA6D00C19E89 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA435A592261CA6D00C19E89 /* Environment.swift */; };
@@ -57,6 +60,9 @@
 		B6E14664B28EEDC85B429EFD /* Pods-Houseradio.debug (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Houseradio.debug (production).xcconfig"; path = "Pods/Target Support Files/Pods-Houseradio/Pods-Houseradio.debug (production).xcconfig"; sourceTree = "<group>"; };
 		BA243E13222BCB8B00FDB1C1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		BA243E15222BCBA700FDB1C1 /* ViewModelBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBased.swift; sourceTree = "<group>"; };
+		BA2BC67522AC013800197944 /* RemoteCommandCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCommandCenter.swift; sourceTree = "<group>"; };
+		BA2BC67722AC020100197944 /* NowPlayingInfoCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingInfoCenter.swift; sourceTree = "<group>"; };
+		BA2BC67922AC07E500197944 /* InfoCenterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCenterData.swift; sourceTree = "<group>"; };
 		BA3B013D22AAE5F500252803 /* MetadataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataLoader.swift; sourceTree = "<group>"; };
 		BA3B013F22AAE73300252803 /* CoverLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverLoader.swift; sourceTree = "<group>"; };
 		BA435A592261CA6D00C19E89 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -199,6 +205,8 @@
 				BA435A592261CA6D00C19E89 /* Environment.swift */,
 				BA666B422176024900590700 /* QuickActionsManager.swift */,
 				BA8D4A782267ABA5003B2E6B /* StoreKitManager.swift */,
+				BA2BC67522AC013800197944 /* RemoteCommandCenter.swift */,
+				BA2BC67722AC020100197944 /* NowPlayingInfoCenter.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -223,6 +231,7 @@
 				BA9AA8A22263238A00CBDD5F /* MetadataItem.swift */,
 				BA8FC0B02222B5E0000330FF /* PushTokenData.swift */,
 				BA666B17217492CD00590700 /* Settings.swift */,
+				BA2BC67922AC07E500197944 /* InfoCenterData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -456,12 +465,14 @@
 				BA3B013E22AAE5F500252803 /* MetadataLoader.swift in Sources */,
 				BA666B2F2175D43100590700 /* Cover.swift in Sources */,
 				BA6668632174888000590700 /* AppDelegate.swift in Sources */,
+				BA2BC67A22AC07E500197944 /* InfoCenterData.swift in Sources */,
 				BA8D4A792267ABA5003B2E6B /* StoreKitManager.swift in Sources */,
 				BA66688621748DA600590700 /* LoadingSettingsCoordinator.swift in Sources */,
 				BA243E16222BCBA700FDB1C1 /* ViewModelBased.swift in Sources */,
 				BA435A5A2261CA6D00C19E89 /* Environment.swift in Sources */,
 				BA666B2C217512DD00590700 /* NavigationController.swift in Sources */,
 				BA666B232174AD6500590700 /* PlayerViewController.swift in Sources */,
+				BA2BC67622AC013800197944 /* RemoteCommandCenter.swift in Sources */,
 				BA666B432176024900590700 /* QuickActionsManager.swift in Sources */,
 				BA666B18217492CD00590700 /* Settings.swift in Sources */,
 				BA8FC0AB2222AEAF000330FF /* Bundle+Extensions.swift in Sources */,
@@ -474,6 +485,7 @@
 				BA8FC0B12222B5E0000330FF /* PushTokenData.swift in Sources */,
 				BA9AA8A32263238A00CBDD5F /* MetadataItem.swift in Sources */,
 				BA8FC0A72222A70D000330FF /* PushTokensManager.swift in Sources */,
+				BA2BC67822AC020100197944 /* NowPlayingInfoCenter.swift in Sources */,
 				BA8FC0AF2222B5C8000330FF /* LanguagesManager.swift in Sources */,
 				BA666B292174C78F00590700 /* CoverLoaderInstance.swift in Sources */,
 				BA66687B21748C7300590700 /* BaseCoordinator.swift in Sources */,

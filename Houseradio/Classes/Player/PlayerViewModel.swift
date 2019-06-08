@@ -27,16 +27,21 @@ protocol HasMetadataLoader {
 	var metadataLoader: MetadataLoader { get }
 }
 
-struct PlayerServices: HasRadioPlayer, HasSettings, HasCoverLoader, HasMetadataLoader {
+protocol HasNowPlayingInfoCenter {
+	var nowPlayingInfoCenter: NowPlayingInfoCenter { get }
+}
+
+struct PlayerServices: HasRadioPlayer, HasSettings, HasCoverLoader, HasMetadataLoader, HasNowPlayingInfoCenter {
 	let radioPlayer: RadioPlayerType
 	let settings: Settings
 	let coverLoader: CoverLoader
 	let metadataLoader: MetadataLoader
+	let nowPlayingInfoCenter: NowPlayingInfoCenter
 }
 
 class PlayerViewModel: ViewModel {
 
-	typealias Services = HasRadioPlayer & HasSettings & HasCoverLoader & HasMetadataLoader
+	typealias Services = HasRadioPlayer & HasSettings & HasCoverLoader & HasMetadataLoader & HasNowPlayingInfoCenter
 	
 	// MARK: - Properties
 	
@@ -44,6 +49,7 @@ class PlayerViewModel: ViewModel {
 	private let settings: Settings
 	private let coverLoader: CoverLoader
 	private let metadataLoader: MetadataLoader
+	private let nowPlayingInfoCenter: NowPlayingInfoCenter
 	private let disposeBag = DisposeBag()
 
 	private let togglePlayPauseSubject = PublishSubject<Void>()
@@ -93,6 +99,7 @@ class PlayerViewModel: ViewModel {
 		settings = services.settings
 		coverLoader = services.coverLoader
 		metadataLoader = services.metadataLoader
+		nowPlayingInfoCenter = services.nowPlayingInfoCenter
 
 		togglePlayPause = togglePlayPauseSubject.asObserver()
 		toggleShare = toggleShareSubject.asObserver()
@@ -182,8 +189,8 @@ class PlayerViewModel: ViewModel {
 			.bind(to: metadataSubject)
 			.disposed(by: disposeBag)
 		Observable.combineLatest(metadata.compactMap({ $0 }), cover)
-			.map { RadioPlayerInfoCenterData(artist: $0.artist, title: $0.title, image: $1.infoCenterImage) }
-			.bind(to: radioPlayer.infoCenterData)
+			.map { NowPlayingInfo(artist: $0.artist, title: $0.title, artwork: $1.infoCenterImage) }
+			.bind(to: nowPlayingInfoCenter.nowPlayingInfo)
 			.disposed(by: disposeBag)
 		metadata
 			.compactMap { $0 }

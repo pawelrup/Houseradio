@@ -72,7 +72,7 @@ class ShoutCASTMetadataLoader: MetadataLoader {
 		var str = string
 		if let startRange = str.range(of: "<body>"), let endRange = str.range(of: "</body>") {
 			str = String(str[startRange.upperBound..<endRange.lowerBound])
-			var arr = str.components(separatedBy: ",")
+			let arr = str.components(separatedBy: ",")
 			var string = ""
 			if arr.count <= 7 {
 				string = arr[arr.count-1]

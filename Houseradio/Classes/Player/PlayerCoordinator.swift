@@ -14,7 +14,8 @@ import RxRadioPlayer
 class PlayerCoordinator: BaseCoordinator<Void> {
 	
 	// MARK: - Properties
-	
+
+	private let nowPlayingInfoCenter = NowPlayingInfoCenter()
 	private let rootViewController: UIViewController
 	
 	// MARK: - Initialization
@@ -32,7 +33,7 @@ class PlayerCoordinator: BaseCoordinator<Void> {
 		radioPlayer.radioURL = settings.shoutcastURL
 		let coverLoader = CoverLoaderInstance(urlSession: urlSession, coverDirectory: settings.coversURL)
 		let metadataLoader = ShoutCASTMetadataLoader(urlSession: urlSession, url: settings.shoutcastURL)
-		let playerServices = PlayerServices(radioPlayer: radioPlayer, settings: settings, coverLoader: coverLoader, metadataLoader: metadataLoader)
+		let playerServices = PlayerServices(radioPlayer: radioPlayer, settings: settings, coverLoader: coverLoader, metadataLoader: metadataLoader, nowPlayingInfoCenter: nowPlayingInfoCenter)
 		let viewController = PlayerViewController.instantiate(withServices: playerServices)
 		
 		let openFanpage = viewController.viewModel

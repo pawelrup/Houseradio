@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	var window: UIWindow?
 	private let audioSession = AVAudioSession.sharedInstance()
 	private var appCoordinator: AppCoordinator!
+	private lazy var remoteCommandCenter = RemoteCommandCenter(radioPlayer: self.radioPlayer)
 	lazy var radioPlayer = RadioPlayer(audioSession: self.audioSession)
 	lazy var quickActionsManager = QuickActionsManager(radioPlayer: self.radioPlayer)
 	let routeDetector = AVRouteDetector()
@@ -42,6 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		appCoordinator.start()
 			.subscribe()
 			.disposed(by: disposeBag)
+		remoteCommandCenter.setupRemoteCommandCenter()
 		UNUserNotificationCenter.current().rx
 			.requestAuthorization(options: [.alert, .badge, .sound])
 			.observeOn(MainScheduler.instance)
