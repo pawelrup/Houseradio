@@ -39,7 +39,9 @@ class NowPlayingInfoCenter {
 		playbackStateSubject
 			.map { $0.mpNowPlayingPlaybackState }
 			.subscribe(onNext: { playbackState in
-				MPNowPlayingInfoCenter.default().playbackState = playbackState
+				if #available(iOS 13.0, *) {
+					MPNowPlayingInfoCenter.default().playbackState = playbackState
+				}
 			})
 			.disposed(by: disposeBag)
 	}
