@@ -77,6 +77,7 @@ class PlayerCoordinator: BaseCoordinator<Void> {
 		let navigationController = NavigationController(rootViewController: viewController)
 		navigationController.navigationBar.barTintColor = .appBrown
 		navigationController.modalTransitionStyle = .crossDissolve
+		navigationController.modalPresentationStyle = .fullScreen
 		rootViewController.present(navigationController, animated: true)
 		
 		return Observable.never()

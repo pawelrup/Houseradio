@@ -53,6 +53,7 @@
 		BA5162C822CD15DC009CD67D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BA5162C722CD15DC009CD67D /* RxSwift */; };
 		BA5162D322CD1705009CD67D /* RxUserNotifications in Frameworks */ = {isa = PBXBuildFile; productRef = BA5162D222CD1705009CD67D /* RxUserNotifications */; };
 		BA5162D622CD181D009CD67D /* RxAnimated in Frameworks */ = {isa = PBXBuildFile; productRef = BA5162D522CD181D009CD67D /* RxAnimated */; };
+		BADD8E3222CD389E00F80FF3 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADD8E3122CD389E00F80FF3 /* AVKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +112,7 @@
 		BA51628F22CD0FFA009CD67D /* UIColor+ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ColorPalette.swift"; sourceTree = "<group>"; };
 		BA51629022CD0FFA009CD67D /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		BA5162C322CD1573009CD67D /* RxAnimated */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RxAnimated; path = ../../RxAnimated; sourceTree = "<group>"; };
+		BADD8E3122CD389E00F80FF3 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			files = (
 				BA5162D622CD181D009CD67D /* RxAnimated in Frameworks */,
 				BA5162C822CD15DC009CD67D /* RxSwift in Frameworks */,
+				BADD8E3222CD389E00F80FF3 /* AVKit.framework in Frameworks */,
 				BA5162C622CD15DC009CD67D /* RxCocoa in Frameworks */,
 				BA5162D322CD1705009CD67D /* RxUserNotifications in Frameworks */,
 				BA5162BE22CD1042009CD67D /* RxRadioPlayer in Frameworks */,
@@ -290,6 +293,7 @@
 		BA5162D422CD181D009CD67D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BADD8E3122CD389E00F80FF3 /* AVKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
