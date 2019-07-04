@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5of-M4-Oop">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -95,7 +96,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="primary"/>
                         <constraints>
                             <constraint firstItem="8rg-5D-gdv" firstAttribute="top" secondItem="aMp-nN-NYJ" secondAttribute="top" constant="16" id="5a4-OG-ZuZ"/>
                             <constraint firstItem="uje-Bj-hUd" firstAttribute="top" secondItem="aMp-nN-NYJ" secondAttribute="top" constant="16" id="7P0-q8-M3w"/>
@@ -150,6 +151,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="MiS-0b-JLH">
                         <barButtonItem key="leftBarButtonItem" image="fb" id="vE7-yV-Vgj">
+                            <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-8"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="3A5-L9-otQ">
@@ -178,9 +180,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="933.33331298828125" height="700"/>
-        <image name="fb" width="25" height="25"/>
+        <image name="background" width="2800" height="2100"/>
+        <image name="fb" width="44" height="44"/>
         <image name="hr" width="703" height="330"/>
         <image name="play" width="960" height="1152"/>
+        <namedColor name="primary">
+            <color red="0.17599999904632568" green="0.097999997437000275" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

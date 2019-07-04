@@ -75,7 +75,7 @@ class PlayerCoordinator: BaseCoordinator<Void> {
 			.disposed(by: disposeBag)
 		
 		let navigationController = NavigationController(rootViewController: viewController)
-		navigationController.navigationBar.barTintColor = .appBrown
+		navigationController.navigationBar.barTintColor = .primary
 		navigationController.modalTransitionStyle = .crossDissolve
 		navigationController.modalPresentationStyle = .fullScreen
 		rootViewController.present(navigationController, animated: true)
@@ -87,7 +87,7 @@ class PlayerCoordinator: BaseCoordinator<Void> {
 	
 	private func showFanpage(by url: URL, in viewController: UIViewController) {
 		let safariViewController = SFSafariViewController(url: url)
-		safariViewController.preferredBarTintColor = .appBrown
+		safariViewController.preferredBarTintColor = .primary
 		safariViewController.preferredControlTintColor = .white
 		viewController.present(safariViewController, animated: true)
 	}
