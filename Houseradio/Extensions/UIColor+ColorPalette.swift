@@ -12,7 +12,7 @@ import UIKit
 
 extension UIColor {
 	
-	@nonobjc class var appBrown: UIColor {
-		return UIColor(named: "appBrown")!
+	@nonobjc class var primary: UIColor {
+		return UIColor(named: "primary")!
 	}
 }
